@@ -3,18 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <title>registration form</title>
+    <style >
+        body{
+            font-fanily:Arial, sans-serif;
+               color: black;
+       background :linear-gradient(to  left, chocolate,crimson, salmon);      
+         margin:0;
+         padding :15px;
+        }
+        h1{
+        text-align: center ;
+        color: purple;
+        margin-bottom:20px;
+        }
+        form{
+            max-width :400px;
+           background-color: azure;
+            margin:auto; 
+            border-radius:10px;
+            box-shadow:0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+              display: black;
+        margin-top:10px;
+        font-weight:bold;
+        color:black;
+      }
+    input[type="text"],
+    input[type="date"],
+    input[type="email"],
+    select,
+    input[type="file"],
+    input[type="password"]
+    {
+        width:200px;
+        padding:5px;
+      margin-top:20px;
+border:1px solid;
+border-radius:5px;
+background-color:aqua;
+    }
+    input[type="radio"],
+    input[type="checkbox"]
+{
+   margin-right:10px;
+    }
+    input[type="submit"],
+input[type="reset"]
+{
+     padding:10px 20px;
+     border:none;
+      border-radius:8px;
+    background-color: turquoise;
+    color:white;
+   cursor:pointer;
+   margin-top:20px;
+   margin-right:10px;
+   font-weight:bold;
+}
+input[type="submit"]:hover,
+input [ type="reset"]:hover
+{
+background-color:cadetblue;
+}
+    </style>
 </head>
-<body background="ff.jpg">
- <center><h1 style="color: violet"><i>My registration form</i></h1></center>
+<body>
+ <center><h1><i>My registration form</i></h1></center>
  <form name="my form">
-     <table>
+    <table>
          <tr>
              <td>First name:</td>
    <td> <input type="text"name="fname"size="20"></td>
          </tr>
          <tr><td>Last name:</td> <td><input type="text" name="lname" size="20"></td></tr>
-         <tr><td>Father name:</td> <td><input type="text" name="fathername" size="20"></td></tr>
-         <tr><td>Mother name:</td> <td><input type="text" name="mname" size="20"></td></tr>
+         <tr><td>Fname:</td> <td><input type="text" name="fathername" size="20"></td></tr>
+         <tr><td>Mname:</td> <td><input type="text" name="mname" size="20"></td></tr>
          <tr><td>DOB:</td> <td><input type="date" name="dob" size="20"></td></tr>
          <tr><td>Gender:</td> <td><input type="radio"name="gender" >male
        <input type="radio" name="gender">female</td></tr>
@@ -30,14 +94,23 @@
             <tr><td>hobbies:</td> <td><input type="checkbox"name="singing" >singing 
        <input type="checkbox" name="reading">reading
           <input type="checkbox"name="dancing" >dancing 
-             <tr><td>address:</td> <td><textarea name="address"></textarea></td></tr>
-       </tr>
+   
                 <tr><td>photo:</td> <td><input type="file"name="photo" >
        </td></tr>
+          <tr><td>password:</td><td><input type="password" name="password"id="password"></td></tr>
      </table>
+     <div class ="hover">
         <tr><td></td> <td><input type="submit"name="submit" >
        </td></tr>
+          <tr><td></td> <td><input type="reset"name="reset"></td></tr>
+          
+       
+       
  </form>
+
+    
+    
+    
   
 </body>
 </html>
